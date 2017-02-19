@@ -4,18 +4,34 @@
     <meta charset="UTF-8">
     <title>Lexi Michel: Front-End Developer</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Muli|Questrial" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body ng-app="PortfolioApp">
-    <header></header>
+    <header>
+        <nav>
+            <img src="assets/logo.png" alt="logo" id="nav-logo">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> 
+    </header>
     <main>
-        <h1>Lexi Michel's Portfolio.</h1>
-        <p>Under Construction</p>
-        <ui-view></ui-view>
+        <section id="hero">
+           <div id="hero-img"></div>
+        </section>
+        <section id="about">
+        </section>
+        <section id="portfolio">
+        </section>
+        <section id="contact">
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Footer goes here :) </p>
+    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
-    <script src="https://npmcdn.com/angular-ui-router@1.0.0-beta.3/release/angular-ui-router.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
