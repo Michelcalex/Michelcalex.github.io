@@ -1,0 +1,19 @@
+#portfolio {
+    background-color: $portfolio-bkgd-color;
+    
+    .portfolio-container {
+        background-color: $portfolio-bkgd-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 0 8%;
+
+        .portfolio-content {
+            background-color: white;
+            width: 40%;
+            height: 200px;
+            margin: 3%;
+        }
+    }
+}

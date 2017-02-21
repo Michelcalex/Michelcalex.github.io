@@ -1,10 +1,16 @@
 $header-bkgd-color: #736372;
+$portfolio-bkgd-color: #7A918D;
+$section-bkgd-color: #DCEED1;
+
+$primary-font-type: 'Questrial', sans-serif;
+$highlight-font-type: 'Sacramento', cursive;
 
 
 //Partial imports
 @import 'partials/header';
 @import 'partials/hero';
 @import 'partials/about';
+@import 'partials/portfolio';
 
 
 
@@ -14,5 +20,15 @@ $header-bkgd-color: #736372;
 // }
 
 h2 {
-    margin: 0px;
+    background-color: $section-bkgd-color;
+    font-family: $highlight-font-type;
+    width: 10%;
+    padding: 10px;    
+    font-size: 2em;
+    font-weight: normal;
+    text-align: center;
+}
+
+body {
+    font-family: $primary-font-type;
 }

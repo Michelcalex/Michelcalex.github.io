@@ -1,31 +1,36 @@
 #about {
+    background-image: url('../assets/lookoutmtn.png');
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+    // padding-top: 75px;
+    // padding-bottom: 75px;
     
     #about-img {
-        background-image: url('../assets/lookoutmtn.png');
-        background-size: cover;
-        background-position: center center;
-        height: 600px;
-        padding-top: 75px;
-        padding-bottom: 75px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+            display: flex;
+            justify-content: center;
 
         .about-content {
             width: 0px;
             height: 0px;
+            margin: 125px 0px;
             border-style: inset;
-            border-width: 325px 325px 0px 325px; 
-            border-color:  rgba(170, 192, 170,0.3) transparent transparent transparent;
+            border-width: 350px 350px 0px 350px; 
+            border-color:  rgba(255, 255, 255,0.5) transparent transparent transparent;
         
             p {
                 text-align: center;
-                bottom: 300px;
+                bottom: 330px;
                 left: -250px;
                 position: relative;
                 width: 500px;
                 margin: 0px;
                 color: #111311;
+            }
+
+            span {
+                font-family: $highlight-font-type;
+                font-size: 2em;
             }
         }
     }
