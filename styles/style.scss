@@ -3,13 +3,20 @@ $footer-bkgd-color: #736372;
 $portfolio-bkgd-color: #7A918D;
 $contact-bkgd-color: #AAC0AA;
 $section-bkgd-color: #DCEED1;
+$primary-font-color: #232121;
 
-$primary-font-type: 'Questrial', sans-serif;
+// $primary-font-type: 'Questrial', sans-serif;
+$primary-font-type: 'Nunito', sans-serif;
 $highlight-font-type: 'Sacramento', cursive;
 
 
 
 //Global Styles 
+* { 
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: $primary-font-type;
 }
@@ -17,12 +24,28 @@ body {
 h2 {
     background-color: $section-bkgd-color;
     font-family: $highlight-font-type;
-    width: 10%;
+    width: 100px;
     padding: 10px;    
     font-size: 2em;
     font-weight: normal;
     text-align: center;
+    color: $primary-font-color;
 }
+
+
+
+// .anchor:target {
+//     display: block;
+//     content: "";
+// }
+
+
+// .anchor{
+//   display: block;
+//   height: 115px; /*same height as header*/
+//   margin-top: -115px; /*same height as header*/
+//   visibility: hidden;
+// }
 
 
 //Partial imports
@@ -32,11 +55,4 @@ h2 {
 @import 'partials/portfolio';
 @import 'partials/contact';
 @import 'partials/footer';
-
-
-
-// :target:before {
-//     display: block;
-//     content: "";
-// }
 

@@ -1,6 +1,7 @@
 #contact {
-    background-color: #AAC0AA;
+    background-color: #BAA49B;
     padding-bottom: 150px;
+    padding-top: 75px;
 
     #contact-container {
         display: flex;
@@ -8,6 +9,7 @@
         background-color: #c6d6bc;
         width: 75%;
         margin: 0 auto;
+        box-shadow: 2px 2px 5px rgba(118,128,112,1);
 
         #form-container {
             width: 40%; 
@@ -86,13 +88,17 @@
 
             div {
                 display: flex;
+                align-items: center;
+                font-family: $highlight-font-type;
+                font-size: 1.4rem;
+                color: #767171;
             }
 
             .contact-icons {
                 background-size: cover;
                 width: 30px;
                 height: 30px;
-                margin: 11px 5px;
+                margin: 11px 12px 11px 5px;
             }
         }
     }  
