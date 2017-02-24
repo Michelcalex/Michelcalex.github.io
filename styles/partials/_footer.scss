@@ -1,0 +1,17 @@
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    background-color: $footer-bkgd-color;
+
+    div {
+        margin: 15px 0px;
+
+        p {
+            font-size: 0.6rem;
+            margin: 0px;
+        }
+    }
+}
