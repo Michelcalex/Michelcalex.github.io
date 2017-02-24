@@ -1,23 +1,18 @@
 $header-bkgd-color: #736372;
+$footer-bkgd-color: #736372;
 $portfolio-bkgd-color: #7A918D;
+$contact-bkgd-color: #AAC0AA;
 $section-bkgd-color: #DCEED1;
 
 $primary-font-type: 'Questrial', sans-serif;
 $highlight-font-type: 'Sacramento', cursive;
 
 
-//Partial imports
-@import 'partials/header';
-@import 'partials/hero';
-@import 'partials/about';
-@import 'partials/portfolio';
 
-
-
-// :target:before {
-//     display: block;
-//     content: "";
-// }
+//Global Styles 
+body {
+    font-family: $primary-font-type;
+}
 
 h2 {
     background-color: $section-bkgd-color;
@@ -29,6 +24,18 @@ h2 {
     text-align: center;
 }
 
-body {
-    font-family: $primary-font-type;
-}
+
+//Partial imports
+@import 'partials/header';
+@import 'partials/hero';
+@import 'partials/about';
+@import 'partials/portfolio';
+@import 'partials/contact';
+
+
+
+// :target:before {
+//     display: block;
+//     content: "";
+// }
+

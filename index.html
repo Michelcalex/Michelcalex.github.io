@@ -32,7 +32,7 @@
         </section>
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <div class="portfolio-container">
+            <div id="portfolio-container">
                 <div class="portfolio-content">
                     <h3>Example 1</h3>
                 </div>
@@ -49,12 +49,44 @@
         </section>
         <section id="contact">
             <h2>Contact</h2>
+            <div id="contact-container">
+                <div id="form-container">
+                    <form action="mailto:michelcalex@gmail.com">
+                        <input type="text" placeholder="Name" required>
+                        <span><i class="fa fa-user form-icons" aria-hidden="true"></i></span>
+                        <input type="text" placeholder="Subject" required>
+                        <span><i class="fa fa-pencil form-icons" aria-hidden="true"></i></span>
+                        <input type="text" placeholder="Email address" required>
+                        <span><i class="fa fa-envelope form-icons" aria-hidden="true"></i></span>
+                        <textarea placeholder="Tell me what's on your mind..." required></textarea>
+                        <button name="submit" type="submit" id="contact-submit">Send away!</button>
+                    </form>
+                </div>
+                <div id="contact-container">
+                    <div>
+                        <img src="assets/location.png" alt="location" class="contact-icons">
+                        <p>Charlotte, NC</p>
+                    </div>
+                    <div>
+                        <img src="assets/mail.png" alt="email" class="contact-icons">
+                        <p>Michelcalex@gmail.com</p>
+                    </div>
+                    <div>
+                        <a href="https://github.com/michelcalex"><img src="assets/github.png" alt="github" class="contact-icons"></a>
+                        <p>github.com/michelcalex</p>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/michelcalex/"><img src="assets/linkedin.png" alt="linkedin" class="contact-icons"></a>
+                        <p>linkedin.com/in/michelcalex</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <p>Footer goes here :) </p>
     </footer>
-
+    <script src="https://use.fontawesome.com/7fb1b7bdac.js"></script>   
     <script src="app.js"></script>
 </body>
 </html>
