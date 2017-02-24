@@ -1,22 +1,29 @@
 #contact {
     background-color: #AAC0AA;
+    padding-bottom: 150px;
 
     #contact-container {
         display: flex;
         justify-content: space-around;
+        background-color: #c6d6bc;
+        width: 75%;
+        margin: 0 auto;
 
         #form-container {
-            width: 30%; 
+            width: 40%; 
             
             form {
                 display: flex;
                 flex-direction: column;
+                padding: 50px 0px;
 
                 input {
-                    // background-color:#AAC0AA; 
                     font-family: $primary-font-type;
                     margin: 10px 0px;
                     padding: 5px;
+                    background-color: #AAC0AA;
+                    border: 1px solid #DCEED1;
+                    color: #111311;
                 }
 
                 .form-icons {
@@ -24,29 +31,58 @@
                     margin-right: 16px;
                     margin-top: -34px;
                     position: relative;
-                    z-index: 2;
+                    color: #94837c;
                 }
 
                 textarea {
                     font-family: $primary-font-type;
+                    background-color: #AAC0AA;
                     margin: 10px 0px;
                     padding: 5px;
+                    height: 100px;
+                }
+
+                input[type=text], textarea {
+                    outline: none;
+                    border: 1px solid #DDDDDD;
+                }
+
+                input[type=text]:focus, textarea:focus {
+                    box-shadow: 0 0 5px rgba(115,99,114, 1);
+                    border: 1px solid rgba(115,99,114, 1);
+                }
+
+                ::-webkit-input-placeholder {
+                    color: #585958;
                 }
 
                 #contact-submit {
-                    font-family: $primary-font-type;
+                    font-family: $highlight-font-type;
+                    background-color: #BAA49B;
+                    font-size: 1.5rem;
                     margin: 50%;
                     margin: 10px auto;
                     padding: 10px;
                 }
+
+                button {
+                    outline: none;
+                    box-shadow: 0 0 5px rgba(115,99,114, 1);
+                    border: 1px solid #DDDDDD;
+                }
+
+                button:focus {
+                    box-shadow: 0 0 5px rgba(115,99,114, 1);
+                    border: 1px solid rgba(115,99,114, 1);
+                }
             }
         }
 
-        #contact-container {
+        #info-container {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-bottom: 62px;
+            padding-bottom: 138px;
 
             div {
                 display: flex;
