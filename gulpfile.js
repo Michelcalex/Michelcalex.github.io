@@ -6,24 +6,24 @@ gulp.task('default', ['html', 'css', 'js', 'assets']);
 
 gulp.task('html', function() {
     return gulp.src('index.html')
-        .pipe(gulp.dest('public/'));
+        .pipe(gulp.dest('docs/'));
 });
 
 gulp.task('css', function() {
     return gulp.src('styles/style.scss')
         .pipe(sass()) 
-        .pipe(gulp.dest('public/'));
+        .pipe(gulp.dest('docs/'));
 });
 
 gulp.task('js', function() {
     return gulp.src('js/app.js')
         .pipe(browser.browserify()) 
-        .pipe(gulp.dest('public/'));
+        .pipe(gulp.dest('docs/'));
 });
 
 gulp.task('assets', function() {
     return gulp.src(['assets/*.ico', 'assets/*.jpg', 'assets/*.png'])
-        .pipe(gulp.dest('public/assets'));
+        .pipe(gulp.dest('docs/assets'));
 });
 
 gulp.task('watch', ['default'], function() {
