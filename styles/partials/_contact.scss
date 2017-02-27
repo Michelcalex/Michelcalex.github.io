@@ -1,7 +1,6 @@
 #contact {
     background-color: #BAA49B;
     padding-bottom: 150px;
-    //padding-top: 75px;
 
     #contact-container {
         display: flex;
@@ -9,6 +8,31 @@
         width: 75%;
         margin: 0 auto;
         margin-top: 50px;
+
+        #info-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #c6d6bc;
+            box-shadow: 2px 2px 5px rgba(118,128,112,1);
+            padding:  0px 50px;
+            margin-left: 30px;
+
+            div a {
+                display: flex;
+                align-items: center;
+                font-family: $highlight-font-type;
+                font-size: 1.4rem;
+                color: #767171;
+                text-decoration: none;
+            }
+
+            .contact-icons {
+                background-size: cover;
+                width: 30px;
+                margin: 11px 12px 11px 5px;
+            }
+        }
 
         #form-container {
             width: 50%; 
@@ -80,32 +104,6 @@
                     box-shadow: 0 0 5px rgba(115,99,114, 1);
                     border: 1px solid rgba(115,99,114, 1);
                 }
-            }
-        }
-
-        #info-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background-color: #c6d6bc;
-            box-shadow: 2px 2px 5px rgba(118,128,112,1);
-            padding:  0px 50px;
-            margin-left: 30px;
-
-            div {
-                display: flex;
-                align-items: center;
-                font-family: $highlight-font-type;
-                font-size: 1.4rem;
-                color: #767171;
-                text-align: center;
-            }
-
-            .contact-icons {
-                background-size: cover;
-                width: 30px;
-                height: 30px;
-                margin: 11px 12px 11px 5px;
             }
         }
     }  

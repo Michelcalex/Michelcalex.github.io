@@ -16,13 +16,13 @@ gulp.task('css', function() {
 });
 
 gulp.task('js', function() {
-    return gulp.src('js/app.js')
+    return gulp.src('app.js')
         .pipe(browser.browserify()) 
         .pipe(gulp.dest('docs/'));
 });
 
 gulp.task('assets', function() {
-    return gulp.src(['assets/*.ico', 'assets/*.jpg', 'assets/*.png'])
+    return gulp.src(['assets/*.ico', 'assets/*.jpg', 'assets/*.png', 'assets/*.pdf'])
         .pipe(gulp.dest('docs/assets'));
 });
 
