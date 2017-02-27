@@ -64,15 +64,14 @@
     </footer>
     <script src="https://use.fontawesome.com/7fb1b7bdac.js"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
-    <script src="app.js"></script>
     <script id="portfolio-template" type="x-mustache-template">
         <a href=" {{ sampleLink }}" target="_blank">
             <figure class="sample-caption">
                 <img src="{{ sampleImage }}" alt="{{ sampleAlt }}"/>
                 <figcaption class="sample-caption-text">
                     <h4>{{ sampleName }}</h4>
-                    <p><span>{{ sampleDescription}}</span></p>
-                    <p>Toolkit: {{ sampleTech }}</p>
+                    <p>{{ sampleDescription}}</p>
+                    <p class="tools">Toolkit: {{ sampleTech }}</p>
                 </figcaption>
             </figure>
         </a>
@@ -83,5 +82,6 @@
             <p>{{ contactInfo }}</p>
         </a>
     </script>
+    <script src="app.js"></script>
 </body>
 </html>
