@@ -1,13 +1,14 @@
 #contact {
     background-color: #BAA49B;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
+    position: relative;
 
     #contact-container {
         width: 75%;
         margin: 0 auto;
-        margin-top: 50px;
         display: flex;
         justify-content: center;
+        padding: 125px 20px;
 
         @media (min-width:$xl-screen) {
             justify-content: space-around;

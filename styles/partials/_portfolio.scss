@@ -1,9 +1,10 @@
 #portfolio {
     background-color: $portfolio-bkgd-color;
+    position: relative;
     
     #portfolio-container {
         background-color: $portfolio-bkgd-color;
-        padding: 50px 0px 120px;
+        padding: 125px 20px;
 
         #portfolio-grid {
             list-style: none;
@@ -38,12 +39,10 @@
                             display: block;
                             width: 100%;
                             height: 180px;
-                            margin: 30px 0px;
 
 
                             @media (min-width:$xl-screen) {
                                 padding: 20px;
-                                margin: 130px 0px;
                             }
                         }
 
@@ -64,8 +63,8 @@
                             -webkit-box-sizing: border-box;
                             box-sizing: border-box;
                             background-color: rgba(198,214,188,1);
-                            -webkit-transition: opacity .3s ease-in-out;
-                            transition: opacity .3s ease-in-out;
+                            -webkit-transition: opacity .4s ease-in-out;
+                            transition: opacity .4s ease-in-out;
 
 
                             @media (min-width:$xl-screen) {
