@@ -18,38 +18,12 @@
         align-items: center;
         padding: 80px 20px 120px 20px;
 
-        // triangle about me----------------------------
-        //      .about-content {
-        //         width: 0px;
-        //         height: 0px;
-        //         margin: 125px 0px;
-        //         border-style: inset;
-        //         border-width: 350px 350px 0px 350px; 
-        //         border-color:  rgba(255, 255, 255,0.5) transparent transparent transparent;
-        //         box-shadow: 1px -15px 18px -16px rgba(34,34,34,0.5);
-            
-        //         p {
-        //             text-align: center;
-        //             bottom: 330px;
-        //             left: -250px;
-        //             position: relative;
-        //             width: 500px;
-        //             margin: 0px;
-        //             color: #111311;
-        //         }
-
-        //         span {
-        //             font-family: $highlight-font-type;
-        //             font-size: 2em;
-        //         }
-        //     }
-
         #about-info {
             background-color: rgba(255, 255, 255, 0.4);
             width: 65%;
             text-align: center;
             padding: 25px;
-            color: grey;
+            color: #767171;
             letter-spacing: 0.05rem;
             box-shadow: 2px 2px 5px #768070;
 
