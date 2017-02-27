@@ -106,7 +106,6 @@ let contactParent = document.querySelector('#info-container');
         );
         contactParent.appendChild(contactContent);
     }   
-
 });
 
 },{}]},{},[1]);
