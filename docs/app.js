@@ -12,31 +12,31 @@ window.addEventListener('load', function() {
             alt: 'Drum Circle', 
             name: 'Drum Circle', 
             description: 'An open source library of drum samples where users can browse through the database, save their favorite sounds, and play them by building their own customized drum kits.', 
-            tech: 'Angular, Angular Material, Gulp, Sass, Dragula'
+            tech: 'Angular, Angular Material, Gulp, Sass, Dragula',
         },
         {
-            link: 'https://github.com/Michelcalex/lemonade-stand',
+            link: 'http://laughable-moon.surge.sh/#!/stand',
             img: 'assets/lemonaid.png', 
             alt: 'Queen City\'s Lemonaid', 
             name: 'Queen City\'s Lemonaid', 
             description: 'A simplistic version of the online game, Lemonade stand, where each player is responsible for managing their stand\'s reputation and aiming to make the most profit', 
-            tech: 'Angula, Gulp, Sass, AJAX'
+            tech: 'Angula, Gulp, Sass, AJAX',
         },
         {
-            link: 'https://github.com/Michelcalex/movie-emporeum', 
+            link: 'http://loud-quiet.surge.sh/',
             img: 'assets/scene-that.png', 
             alt: 'Scene That', 
             name: 'Scene That', 
             description: 'Movie rating application using a movie API.', 
-            tech: 'Angula, Gulp, Foundation, Sass, REST API'
+            tech: 'Angula, Gulp, Foundation, Sass, REST API', 
         },
         {
-            link: 'https://github.com/Michelcalex/menu-app', 
+            link: 'http://frequent-sail.surge.sh/',
             img: 'assets/nomnom.png', 
             alt: 'Nom Nom', 
             name: 'Nom Nom', 
             description: 'Menu application that allows you to filter through the menu and add food items.', 
-            tech: 'jQuery, Moustache, Foundation, Sass'
+            tech: 'jQuery, Moustache, Foundation, Sass',
         },
         ];
 
@@ -53,6 +53,7 @@ window.addEventListener('load', function() {
                 sampleName: portfolioSamples[i].name, 
                 sampleDescription: portfolioSamples[i].description, 
                 sampleTech: portfolioSamples[i].tech, 
+                sampleGithub: portfolioSamples[i].github, 
              }
         );
         parent.appendChild(portfolioContent);
