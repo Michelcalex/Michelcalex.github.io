@@ -3,6 +3,7 @@
   padding: 0; }
 
 body {
+  padding-top: 75px;
   font-family: "Nunito", sans-serif; }
 
 h2 {
@@ -50,7 +51,7 @@ header {
           color: #DCEED1; }
 
 #home {
-  padding-top: 75px; }
+  height: calc(100vh - 125px); }
   #home #hero-img {
     background-image: url("../assets/hero-banner.png");
     background-size: contain;
