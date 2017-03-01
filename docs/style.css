@@ -191,8 +191,7 @@ header {
       justify-content: center; }
       @media (min-width: 1407px) {
         #contact #contact-container #info-container {
-          margin-left: 30px;
-          padding: 0px 50px; } }
+          margin-left: 30px; } }
       #contact #contact-container #info-container div a {
         display: flex;
         align-items: center;
@@ -214,7 +213,6 @@ header {
       flex-direction: column; }
       @media (min-width: 1407px) {
         #contact #contact-container #form-container {
-          padding: 0px 50px;
           margin-right: 30px; } }
       #contact #contact-container #form-container input {
         font-family: "Nunito", sans-serif;
