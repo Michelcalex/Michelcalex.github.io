@@ -38,16 +38,10 @@
             <div id="contact-container">
                 <div id="info-container"></div>
                 <div id="form-container">
-                    <form action="mailto:michelcalex@gmail.com" method="post" enctype="text/plain">
-                        <input type="text" placeholder="Name" name="name" required>
-                        <span><i class="fa fa-user form-icons" aria-hidden="true"></i></span>
-                        <input type="text" placeholder="Subject" name="subject" required>
-                        <span><i class="fa fa-pencil form-icons" aria-hidden="true"></i></span>
-                        <input type="text" placeholder="Email address" name="email" required>
-                        <span><i class="fa fa-envelope form-icons" aria-hidden="true"></i></span>
-                        <textarea placeholder="Dear Lexi..." name="body" required></textarea>
-                        <button name="submit" type="submit" value="send" id="contact-submit">Send away!</button>
-                    </form>
+                    <input type="text" placeholder="Subject" name="subject" id="subject" required>
+                    <span><i class="fa fa-pencil sub-icon" aria-hidden="true"></i></span>
+                    <textarea placeholder="Dear Lexi..." name="body" id="body" required></textarea>
+                    <a href="mailto:?subject=&body=" id="email"><button>Submit</button></a>
                 </div>
             </div>
         </section>

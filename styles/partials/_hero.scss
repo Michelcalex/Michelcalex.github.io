@@ -1,5 +1,8 @@
 #home {
     height: calc(100vh - 125px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     #hero-img {
         background-image: url('../assets/hero-banner.png');
@@ -7,8 +10,6 @@
         background-position: center center;
         background-repeat: no-repeat;
         height: 200px;
-        padding: 20% 0;
         width: 80%;
-        margin: 0 auto;
-    }
+    } 
 }

@@ -4,6 +4,21 @@ window.addEventListener('load', function() {
     if (location.hash) shiftWindow();
     window.addEventListener("hashchange", shiftWindow);
 
+    let link = document.getElementById('email');
+
+    link.onclick = function() {
+    let subject = document.getElementById('subject').value;
+    let body = document.getElementById('body').value; 
+
+    this.href = 'mailto:michelcalex@gmail.com?';
+    this.href += 'subject=' + subject;
+    this.href += '&body=' + body;
+};
+
+function getBody() {
+    return 'HelloWorld';
+}
+
     //------Portfolio Samples --------------------------
     let portfolioSamples = [
         {
