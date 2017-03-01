@@ -15,9 +15,6 @@ window.addEventListener('load', function() {
     this.href += '&body=' + body;
 };
 
-function getBody() {
-    return 'HelloWorld';
-}
 
     //------Portfolio Samples --------------------------
     let portfolioSamples = [

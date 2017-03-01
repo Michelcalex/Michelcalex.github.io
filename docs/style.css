@@ -184,7 +184,7 @@ header {
     #contact #contact-container #info-container {
       background-color: #c6d6bc;
       box-shadow: 2px 2px 5px #768070;
-      padding: 30px;
+      padding: 40px;
       margin-right: 10px;
       display: flex;
       flex-direction: column;
@@ -208,7 +208,7 @@ header {
       width: 50%;
       background-color: #c6d6bc;
       box-shadow: 2px 2px 5px #768070;
-      padding: 30px;
+      padding: 40px;
       margin-left: 10px;
       display: flex;
       flex-direction: column; }
@@ -234,7 +234,8 @@ header {
         background-color: #AAC0AA;
         margin: 10px 0px;
         padding: 5px;
-        height: 100px; }
+        height: 100px;
+        resize: none; }
       #contact #contact-container #form-container input[type=text], #contact #contact-container #form-container textarea {
         outline: none;
         border: 1px solid #DDDDDD; }
