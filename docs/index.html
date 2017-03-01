@@ -24,33 +24,29 @@
         </section>
         <section id="about">
             <h2>About</h2>
-            <div id="about-content">
-                <div id="about-info">
-                    <p><span>Hey there!</span><br>I'm a Junior web developer specializing in front-end development for full stack web applications. Most of my experience is with HTML,CSS, and JavaScript libraries and frameworks. I'm a recent graduate from The Iron Yard, where I spent 12 immersive weeks learning front-end engineering! Technology and all things creative are my passions. If I am not designing or developing, you can find me outside hammocking, hiking, hula hooping, or enjoying a nice cold brewski!</p>
-                </div>
-                <div id="about-img"></div>
+            <div id="about-info">
+                <p><span>Hey there!</span><br>I'm a Junior web developer specializing in front-end development for full stack web applications. Most of my experience is with HTML,CSS, and JavaScript libraries and frameworks. I'm a recent graduate from The Iron Yard, where I spent 12 immersive weeks learning front-end engineering! Technology and all things creative are my passions. If I am not designing or developing, you can find me outside hammocking, hiking, hula hooping, or enjoying a nice cold brewski!</p>
             </div>
+            <div id="about-img"></div>
         </section>
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <div id="portfolio-container">
-                <ul id="portfolio-grid"></ul>
-            </div>
+            <ul id="portfolio-grid"></ul>
         </section>
         <section id="contact">
             <h2>Contact</h2>
             <div id="contact-container">
                 <div id="info-container"></div>
                 <div id="form-container">
-                    <form action="mailto:michelcalex@gmail.com">
-                        <input type="text" placeholder="Name" required>
+                    <form action="mailto:michelcalex@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" placeholder="Name" name="name" required>
                         <span><i class="fa fa-user form-icons" aria-hidden="true"></i></span>
-                        <input type="text" placeholder="Subject" required>
+                        <input type="text" placeholder="Subject" name="subject" required>
                         <span><i class="fa fa-pencil form-icons" aria-hidden="true"></i></span>
-                        <input type="text" placeholder="Email address" required>
+                        <input type="text" placeholder="Email address" name="email" required>
                         <span><i class="fa fa-envelope form-icons" aria-hidden="true"></i></span>
-                        <textarea placeholder="Dear Lexi..." required></textarea>
-                        <button name="submit" type="submit" id="contact-submit">Send away!</button>
+                        <textarea placeholder="Dear Lexi..." name="body" required></textarea>
+                        <button name="submit" type="submit" value="send" id="contact-submit">Send away!</button>
                     </form>
                 </div>
             </div>
