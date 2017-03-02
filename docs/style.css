@@ -19,12 +19,16 @@ h2 {
   top: 0px;
   left: 0px; }
 
+.contact-containers {
+  background-color: #c6d6bc;
+  padding: 40px;
+  box-shadow: 2px 2px 5px #768070; }
+
 header {
   background-color: #736372;
   width: 100%;
   position: fixed;
   top: 0px;
-  left: 0px;
   z-index: 100; }
   header nav {
     display: flex;
@@ -35,13 +39,11 @@ header {
     header nav #nav-logo {
       height: 50px; }
     header nav ul {
-      display: flex;
-      padding: 0; }
+      display: flex; }
       header nav ul li {
         list-style: none;
         padding: 10px;
-        margin: 5px;
-        border-radius: 5px; }
+        margin: 5px; }
         header nav ul li a {
           color: #232121;
           font-family: "Sacramento", cursive;
@@ -87,7 +89,6 @@ header {
     background-image: url("../assets/lookoutmtn.png");
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
     height: 400px;
     width: 68%;
     margin-top: 30px;
@@ -101,43 +102,36 @@ header {
   align-items: center; }
   #portfolio #portfolio-grid {
     list-style: none;
-    background-color: #7A918D;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 48px; }
+    margin: 0 48px;
+    padding-right: 20px; }
     #portfolio #portfolio-grid li {
       width: 30%;
       margin: 0px 25px; }
       @media (min-width: 1407px) {
         #portfolio #portfolio-grid li {
-          width: 20%;
-          margin: 0; } }
-      #portfolio #portfolio-grid li a figure.sample-caption {
+          width: 20%; } }
+      #portfolio #portfolio-grid li figure.sample-caption {
         position: relative;
-        padding: 0;
         margin: 0; }
-        #portfolio #portfolio-grid li a figure.sample-caption img {
-          padding: 30px;
+        #portfolio #portfolio-grid li figure.sample-caption img {
+          padding: 20px;
           background-color: #6d827e;
           box-shadow: 2px 2px 5px #617470;
           display: block;
           width: 100%;
           height: 180px;
-          margin: 50px 0px; }
-          @media (min-width: 1407px) {
-            #portfolio #portfolio-grid li a figure.sample-caption img {
-              padding: 20px; } }
-        #portfolio #portfolio-grid li a figure.sample-caption figcaption.sample-caption-text {
+          margin: 25px 0px; }
+        #portfolio #portfolio-grid li figure.sample-caption figcaption.sample-caption-text {
           opacity: 0;
           position: absolute;
           width: 100%;
           height: 180px;
-          color: #fff;
-          left: 30px;
-          bottom: 30px;
+          left: 20px;
+          bottom: 20px;
           padding: 0.75em;
-          font-weight: 700;
           text-align: center;
           display: flex;
           flex-direction: column;
@@ -148,22 +142,21 @@ header {
           -webkit-transition: opacity .3s ease-in-out;
           transition: opacity .3s ease-in-out; }
           @media (min-width: 1407px) {
-            #portfolio #portfolio-grid li a figure.sample-caption figcaption.sample-caption-text {
+            #portfolio #portfolio-grid li figure.sample-caption figcaption.sample-caption-text {
               left: 20px;
               bottom: 20px; } }
-          #portfolio #portfolio-grid li a figure.sample-caption figcaption.sample-caption-text h4 {
+          #portfolio #portfolio-grid li figure.sample-caption figcaption.sample-caption-text h4 {
             font-family: "Sacramento", cursive;
             font-size: 1.4rem;
             padding: 5px 0px;
             color: #232121; }
-          #portfolio #portfolio-grid li a figure.sample-caption figcaption.sample-caption-text p {
+          #portfolio #portfolio-grid li figure.sample-caption figcaption.sample-caption-text p {
             color: #232121;
-            font-style: italic;
             font-size: 0.7rem; }
-          #portfolio #portfolio-grid li a figure.sample-caption figcaption.sample-caption-text .tools {
+          #portfolio #portfolio-grid li figure.sample-caption figcaption.sample-caption-text .tools {
             color: #767171;
             padding: 5px 0px; }
-      #portfolio #portfolio-grid li a .sample-caption:hover .sample-caption-text {
+      #portfolio #portfolio-grid li .sample-caption:hover .sample-caption-text {
         opacity: 1; }
 
 #contact {
@@ -177,18 +170,9 @@ header {
     width: 75%;
     margin: 0 auto;
     display: flex;
-    justify-content: center; }
-    @media (min-width: 1407px) {
-      #contact #contact-container {
-        justify-content: space-around; } }
+    justify-content: space-around; }
     #contact #contact-container #info-container {
-      background-color: #c6d6bc;
-      box-shadow: 2px 2px 5px #768070;
-      padding: 40px;
-      margin-right: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
+      margin-right: 10px; }
       @media (min-width: 1407px) {
         #contact #contact-container #info-container {
           margin-left: 30px; } }
@@ -200,14 +184,10 @@ header {
         color: #767171;
         text-decoration: none; }
       #contact #contact-container #info-container .contact-icons {
-        background-size: cover;
         width: 30px;
         margin: 11px 12px 11px 5px; }
     #contact #contact-container #form-container {
       width: 50%;
-      background-color: #c6d6bc;
-      box-shadow: 2px 2px 5px #768070;
-      padding: 40px;
       margin-left: 10px;
       display: flex;
       flex-direction: column; }
@@ -219,14 +199,12 @@ header {
         margin: 10px 0px;
         padding: 5px;
         background-color: #AAC0AA;
-        border: 1px solid #DCEED1;
-        color: #111311; }
+        color: #232121; }
       #contact #contact-container #form-container .sub-icon {
         float: right;
         margin-right: 16px;
         margin-top: -34px;
-        position: relative;
-        color: #94837c; }
+        color: #767171; }
       #contact #contact-container #form-container textarea {
         font-family: "Nunito", sans-serif;
         background-color: #AAC0AA;
@@ -236,22 +214,20 @@ header {
         resize: none; }
       #contact #contact-container #form-container input[type=text], #contact #contact-container #form-container textarea {
         outline: none;
-        border: 1px solid #DDDDDD; }
+        border: 1px solid #dddddd; }
       #contact #contact-container #form-container input[type=text]:focus, #contact #contact-container #form-container textarea:focus {
         box-shadow: 0 0 5px #736372;
         border: 1px solid #736372; }
       #contact #contact-container #form-container ::-webkit-input-placeholder {
-        color: #585958; }
+        color: #767171; }
       #contact #contact-container #form-container #email {
         text-align: center; }
         #contact #contact-container #form-container #email button {
           font-family: "Sacramento", cursive;
           background-color: #BAA49B;
           font-size: 1.5rem;
-          margin: 50%;
           margin: 10px auto;
           padding: 10px;
-          outline: none;
           box-shadow: 0 0 5px #736372;
           border: 1px solid #DDDDDD; }
         #contact #contact-container #form-container #email button:focus {
@@ -268,5 +244,4 @@ footer {
   footer div {
     margin: 15px 0px; }
     footer div p {
-      font-size: 0.6rem;
-      margin: 0px; }
+      font-size: 0.6rem; }

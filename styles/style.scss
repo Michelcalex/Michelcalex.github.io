@@ -1,13 +1,19 @@
+//Global variables
 $header-bkgd-color: #736372;
 $footer-bkgd-color: #736372;
-$portfolio-bkgd-color: #7A918D;
-$contact-bkgd-color: #AAC0AA;
-$section-bkgd-color: #DCEED1;
+$label-bkgd-color: #DCEED1;
+$input-bkgd-color: #AAC0AA;
+$cont-contain-bkgd-color: #c6d6bc;
+$primary-shadow-color: #768070;
+$secondary-shadow-color: #736372;
+$border-color: #dddddd;
 $primary-font-color: #232121;
-
-// $primary-font-type: 'Questrial', sans-serif;
+$secondary-font-color: #767171;
 $primary-font-type: 'Nunito', sans-serif;
 $highlight-font-type: 'Sacramento', cursive;
+$portfolio-bkgd-color: #7A918D;
+$contact-bkgd-color: #AAC0AA;
+$section-height: 800px;
 
 
 //Media quieres 
@@ -27,7 +33,7 @@ body {
 }
 
 h2 {
-    background-color: $section-bkgd-color;
+    background-color: $label-bkgd-color;
     font-family: $highlight-font-type;
     width: 100px;
     padding: 10px;    
@@ -38,6 +44,12 @@ h2 {
     position: absolute;
     top: 0px; 
     left: 0px;
+}
+
+.contact-containers {
+    background-color: $cont-contain-bkgd-color;
+    padding: 40px;
+    box-shadow: 2px 2px 5px $primary-shadow-color;
 }
 
 

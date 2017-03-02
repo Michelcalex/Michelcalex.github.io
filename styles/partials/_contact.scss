@@ -5,27 +5,15 @@
     height: calc(100vh - 125px);
     display: flex;
     align-items: center;
-    
 
     #contact-container {
         width: 75%;
         margin: 0 auto;
         display: flex;
-        justify-content: center;
-
-        @media (min-width:$xl-screen) {
-            justify-content: space-around;
-        }
+        justify-content: space-around;
 
         #info-container {
-            background-color: #c6d6bc;
-            box-shadow: 2px 2px 5px rgba(118,128,112,1);
-            padding: 40px;
-            margin-right: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-                        
+            margin-right: 10px;         
 
             @media (min-width:$xl-screen) {
                 margin-left: 30px;
@@ -36,12 +24,11 @@
                 align-items: center;
                 font-family: $highlight-font-type;
                 font-size: 1.4rem;
-                color: #767171;
+                color: $secondary-font-color;
                 text-decoration: none;
             }
 
             .contact-icons {
-                background-size: cover;
                 width: 30px;
                 margin: 11px 12px 11px 5px;
             }
@@ -49,11 +36,7 @@
 
         #form-container {
             width: 50%; 
-            background-color: #c6d6bc;
-            box-shadow: 2px 2px 5px rgba(118,128,112,1);
-            padding: 40px;
             margin-left: 10px;
-
             display: flex;
             flex-direction: column;
             
@@ -65,22 +48,20 @@
                 font-family: $primary-font-type;
                 margin: 10px 0px;
                 padding: 5px;
-                background-color: #AAC0AA;
-                border: 1px solid #DCEED1;
-                color: #111311;
+                background-color:$input-bkgd-color;
+                color: $primary-font-color;
             }
 
             .sub-icon {
                 float: right;
                 margin-right: 16px;
                 margin-top: -34px;
-                position: relative;
-                color: #94837c;
+                color: $secondary-font-color;
             }
 
             textarea {
                 font-family: $primary-font-type;
-                background-color: #AAC0AA;
+                background-color: $input-bkgd-color;
                 margin: 10px 0px;
                 padding: 5px;
                 height: 100px;
@@ -89,16 +70,16 @@
 
             input[type=text], textarea {
                 outline: none;
-                border: 1px solid #DDDDDD;
+                border: 1px solid $border-color;
             }
 
             input[type=text]:focus, textarea:focus {
-                box-shadow: 0 0 5px rgba(115,99,114, 1);
-                border: 1px solid rgba(115,99,114, 1);
+                box-shadow: 0 0 5px $secondary-shadow-color;
+                border: 1px solid $secondary-shadow-color;
             }
 
             ::-webkit-input-placeholder {
-                color: #585958;
+                color: $secondary-font-color;
             }
 
             #email {
@@ -108,17 +89,15 @@
                     font-family: $highlight-font-type;
                     background-color: #BAA49B;
                     font-size: 1.5rem;
-                    margin: 50%;
                     margin: 10px auto;
                     padding: 10px;
-                    outline: none;
-                    box-shadow: 0 0 5px rgba(115,99,114, 1);
+                    box-shadow: 0 0 5px $secondary-shadow-color;
                     border: 1px solid #DDDDDD;
                 }
 
                 button:focus {
-                    box-shadow: 0 0 5px rgba(115,99,114, 1);
-                    border: 1px solid rgba(115,99,114, 1);
+                    box-shadow: 0 0 5px $secondary-shadow-color;
+                    border: 1px solid $secondary-shadow-color;
                 }
             }
         }

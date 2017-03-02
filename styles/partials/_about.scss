@@ -5,34 +5,31 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    height: $section-height;
     
-        
     #about-info {
         background-color: rgba(255, 255, 255, 0.4);
         width: 65%;
         text-align: center;
         padding: 25px;
-        color: #767171;
+        color: $secondary-font-color;
         letter-spacing: 0.05rem;
-        box-shadow: 2px 2px 5px #768070;
-
+        box-shadow: 2px 2px 5px $primary-shadow-color;
     }
 
     span {
         font-family: $highlight-font-type;
         font-size: 1.7rem;
-        color: #767171;
+        color: $secondary-font-color;
     }
 
     #about-img {
         background-image: url('../assets/lookoutmtn.png');
         background-size: cover;
         background-position: center center;
-        background-repeat: no-repeat;
         height: 400px;
         width: 68%;
         margin-top: 30px;
-        box-shadow: 2px 2px 5px #768070;
+        box-shadow: 2px 2px 5px $primary-shadow-color;
     }   
 }
