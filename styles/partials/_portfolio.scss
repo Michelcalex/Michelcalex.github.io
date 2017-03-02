@@ -37,9 +37,9 @@
                     margin: 10px 0px;
                 }
 
-                // @media (min-width:$xl-screen) {
-                //     width: 20%;
-                // }
+                @media (min-width:$xl-screen) {
+                    margin: 20px 0px;
+                }
 
                 figcaption.sample-caption-text {
                     opacity: 0;
