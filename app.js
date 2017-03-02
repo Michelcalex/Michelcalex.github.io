@@ -31,7 +31,7 @@ window.addEventListener('load', function() {
             alt: 'Queen City\'s Lemonaid', 
             name: 'Queen City\'s Lemonaid', 
             description: 'A simplistic version of the online game, Lemonade stand, where each player is responsible for managing their stand\'s reputation and aiming to make the most profit', 
-            tech: 'Angula, Gulp, Sass, AJAX',
+            tech: 'Angular, Gulp, Sass, AJAX',
         },
         {
             link: 'http://loud-quiet.surge.sh/',
@@ -39,7 +39,7 @@ window.addEventListener('load', function() {
             alt: 'Scene That', 
             name: 'Scene That', 
             description: 'Movie rating application using a movie API.', 
-            tech: 'Angula, Gulp, Foundation, Sass, REST API', 
+            tech: 'Angular, Gulp, Foundation, Sass, REST API', 
         },
         {
             link: 'http://frequent-sail.surge.sh/',
