@@ -41,6 +41,14 @@ window.addEventListener('load', function() {
             description: 'Movie rating application using a movie API.', 
             tech: 'Angular, Gulp, Foundation, Sass, REST API', 
         },
+       {
+            link: 'http://simple-bit.surge.sh/',
+            img: 'assets/chatterbox.png', 
+            alt: 'ChatterBox 2.0', 
+            name: 'ChatterBox 2.0', 
+            description: 'Chat application', 
+            tech: 'jQuery, Backbone, Underscore, Moustache, Foundation, Gulp', 
+        },
         {
             link: 'http://frequent-sail.surge.sh/',
             img: 'assets/nomnom.png', 
@@ -48,6 +56,14 @@ window.addEventListener('load', function() {
             name: 'Nom Nom', 
             description: 'Menu application that allows you to filter through the menu and add food items.', 
             tech: 'jQuery, Moustache, Foundation, Sass',
+        },
+       {
+            link: 'http://cheap-earthquake.surge.sh/',
+            img: 'assets/card-sharks.png', 
+            alt: 'Card Sharks', 
+            name: 'Card Sharks', 
+            description: 'Card game based on the game show, Card Sharks', 
+            tech: 'Sass and REST API', 
         },
         ];
 

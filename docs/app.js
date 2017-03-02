@@ -32,7 +32,7 @@ window.addEventListener('load', function() {
             alt: 'Queen City\'s Lemonaid', 
             name: 'Queen City\'s Lemonaid', 
             description: 'A simplistic version of the online game, Lemonade stand, where each player is responsible for managing their stand\'s reputation and aiming to make the most profit', 
-            tech: 'Angula, Gulp, Sass, AJAX',
+            tech: 'Angular, Gulp, Sass, AJAX',
         },
         {
             link: 'http://loud-quiet.surge.sh/',
@@ -40,7 +40,15 @@ window.addEventListener('load', function() {
             alt: 'Scene That', 
             name: 'Scene That', 
             description: 'Movie rating application using a movie API.', 
-            tech: 'Angula, Gulp, Foundation, Sass, REST API', 
+            tech: 'Angular, Gulp, Foundation, Sass, REST API', 
+        },
+       {
+            link: 'http://simple-bit.surge.sh/',
+            img: 'assets/chatterbox.png', 
+            alt: 'ChatterBox 2.0', 
+            name: 'ChatterBox 2.0', 
+            description: 'Chat application', 
+            tech: 'jQuery, Backbone, Underscore, Moustache, Foundation, Gulp', 
         },
         {
             link: 'http://frequent-sail.surge.sh/',
@@ -49,6 +57,14 @@ window.addEventListener('load', function() {
             name: 'Nom Nom', 
             description: 'Menu application that allows you to filter through the menu and add food items.', 
             tech: 'jQuery, Moustache, Foundation, Sass',
+        },
+       {
+            link: 'http://cheap-earthquake.surge.sh/',
+            img: 'assets/card-sharks.png', 
+            alt: 'Card Sharks', 
+            name: 'Card Sharks', 
+            description: 'Card game based on the game show, Card Sharks', 
+            tech: 'Sass and REST API', 
         },
         ];
 
