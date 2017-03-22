@@ -96,7 +96,7 @@
                 }
             }
 
-            .sample-caption:hover .sample-caption-text, .sample-caption:focus .sample-caption-text, {
+            .sample-caption:hover .sample-caption-text, .sample-caption:active .sample-caption-text, {
                 opacity: 1;
             }
         }
