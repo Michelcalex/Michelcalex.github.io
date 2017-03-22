@@ -1,40 +1,21 @@
 #portfolio {
     background-color: $portfolio-bkgd-color;
     position: relative;
+    height: $section-height;
     display: flex;
-
-    @media (min-width:$sm-screen) {
-        height: $section-height;
-        align-items: center;
-    }
-    //height: none;
-    //align-items: none;
+    align-items: center;
 
     #portfolio-grid {
         list-style: none;
-        margin: 50px 0px;
-       
-        @media (min-width:$sm-screen) {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 0 48px;
-            padding-right: 20px;
-        }
-
-        //no display, no flex-wrap, no justify-content, no margin and no padding-right
-        //margin: 50px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 48px;
+        padding-right: 20px;
 
         li {
             width: 30%;
-            margin: 25px auto;
-
-            //margin 25px auto;
-
-            @media (min-width:$sm-screen) {
-               margin: 0px 25px;
-            }
+            margin: 0px 25px;
 
             @media (min-width:$xl-screen) {
                 width: 20%;
@@ -103,7 +84,7 @@
                 }
             }
 
-            .sample-caption:hover, .sample-caption:focus, .sample-caption-text {
+            .sample-caption:hover .sample-caption-text {
                 opacity: 1;
             }
         }

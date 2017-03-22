@@ -9,20 +9,11 @@
     #contact-container {
         width: 75%;
         margin: 0 auto;
-        
-        //no display, no justify-content,
-        @media (min-width:$sm-screen) {
-            display: flex;
-            justify-content: space-around;
-        }
+        display: flex;
+        justify-content: space-around;
 
         #info-container {
-             
-            @media (min-width:$sm-screen) {
-               margin-right: 10px;  
-            }     
-
-            //no margin-right  
+            margin-right: 10px;         
 
             @media (min-width:$xl-screen) {
                 margin-left: 30px;
@@ -44,15 +35,10 @@
         }
 
         #form-container {
+            width: 50%; 
+            margin-left: 10px;
             display: flex;
             flex-direction: column;
-
-            //no margin-left and no with
-
-            @media (min-width:$sm-screen) {
-               margin-left: 10px;  
-               width: 50%;
-            } 
             
             @media (min-width:$xl-screen) {
                 margin-right: 30px;

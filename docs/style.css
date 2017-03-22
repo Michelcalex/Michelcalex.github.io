@@ -22,11 +22,7 @@ h2 {
 .contact-containers {
   background-color: #c6d6bc;
   padding: 40px;
-  box-shadow: 2px 2px 5px #768070;
-  margin: 30px 0px; }
-  @media (min-width: 415px) {
-    .contact-containers {
-      margin: 0; } }
+  box-shadow: 2px 2px 5px #768070; }
 
 header {
   background-color: #736372;
@@ -52,10 +48,7 @@ header {
           color: #232121;
           font-family: "Sacramento", cursive;
           text-decoration: none;
-          font-size: 1.8rem; }
-          @media (min-width: 415px) {
-            header nav ul li a {
-              font-size: 1.5rem; } }
+          font-size: 1.5rem; }
         header nav ul li a:hover {
           color: #DCEED1; }
 
@@ -87,11 +80,7 @@ header {
     padding: 25px;
     color: #767171;
     letter-spacing: 0.05rem;
-    box-shadow: 2px 2px 5px #768070;
-    margin-top: 100px; }
-    @media (min-width: 415px) {
-      #about #about-info {
-        margin-top: 0; } }
+    box-shadow: 2px 2px 5px #768070; }
   #about span {
     font-family: "Sacramento", cursive;
     font-size: 1.7rem;
@@ -101,40 +90,26 @@ header {
     background-size: cover;
     background-position: center center;
     height: 400px;
-    width: 75%;
+    width: 68%;
     margin-top: 30px;
-    margin-bottom: 100px;
     box-shadow: 2px 2px 5px #768070; }
-    @media (min-width: 415px) {
-      #about #about-img {
-        margin-bottom: 0;
-        width: 68%; } }
 
 #portfolio {
   background-color: #7A918D;
   position: relative;
-  display: flex; }
-  @media (min-width: 415px) {
-    #portfolio {
-      height: 800px;
-      align-items: center; } }
+  height: 800px;
+  display: flex;
+  align-items: center; }
   #portfolio #portfolio-grid {
     list-style: none;
-    margin: 50px 0px; }
-    @media (min-width: 415px) {
-      #portfolio #portfolio-grid {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0 48px;
-        padding-right: 20px; } }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 48px;
+    padding-right: 20px; }
     #portfolio #portfolio-grid li {
       width: 30%;
-      margin: 25px auto; }
-      @media (min-width: 415px) {
-        #portfolio #portfolio-grid li {
-          margin: 0px 25px; } }
+      margin: 0px 25px; }
       @media (min-width: 1407px) {
         #portfolio #portfolio-grid li {
           width: 20%;
@@ -185,7 +160,7 @@ header {
           #portfolio #portfolio-grid li figure.sample-caption figcaption.sample-caption-text .tools {
             color: #767171;
             padding: 5px 0px; }
-      #portfolio #portfolio-grid li .sample-caption:hover, #portfolio #portfolio-grid li .sample-caption:focus, #portfolio #portfolio-grid li .sample-caption-text {
+      #portfolio #portfolio-grid li .sample-caption:hover .sample-caption-text {
         opacity: 1; }
 
 #contact {
@@ -197,34 +172,29 @@ header {
   align-items: center; }
   #contact #contact-container {
     width: 75%;
-    margin: 0 auto; }
-    @media (min-width: 415px) {
-      #contact #contact-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+    #contact #contact-container #info-container {
+      margin-right: 10px; }
+      @media (min-width: 1407px) {
+        #contact #contact-container #info-container {
+          margin-left: 30px; } }
+      #contact #contact-container #info-container div a {
         display: flex;
-        justify-content: space-around; } }
-    @media (min-width: 415px) {
-      #contact #contact-container #info-container {
-        margin-right: 10px; } }
-    @media (min-width: 1407px) {
-      #contact #contact-container #info-container {
-        margin-left: 30px; } }
-    #contact #contact-container #info-container div a {
-      display: flex;
-      align-items: center;
-      font-family: "Sacramento", cursive;
-      font-size: 1.4rem;
-      color: #767171;
-      text-decoration: none; }
-    #contact #contact-container #info-container .contact-icons {
-      width: 30px;
-      margin: 11px 12px 11px 5px; }
+        align-items: center;
+        font-family: "Sacramento", cursive;
+        font-size: 1.4rem;
+        color: #767171;
+        text-decoration: none; }
+      #contact #contact-container #info-container .contact-icons {
+        width: 30px;
+        margin: 11px 12px 11px 5px; }
     #contact #contact-container #form-container {
+      width: 50%;
+      margin-left: 10px;
       display: flex;
       flex-direction: column; }
-      @media (min-width: 415px) {
-        #contact #contact-container #form-container {
-          margin-left: 10px;
-          width: 50%; } }
       @media (min-width: 1407px) {
         #contact #contact-container #form-container {
           margin-right: 30px; } }
