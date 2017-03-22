@@ -15,6 +15,13 @@
         color: $secondary-font-color;
         letter-spacing: 0.05rem;
         box-shadow: 2px 2px 5px $primary-shadow-color;
+        margin-top: 100px;
+
+        @media (min-width:$sm-screen) {
+            margin-top: 0;
+        }
+
+        //margin-top: 100px;
     }
 
     span {
@@ -28,8 +35,16 @@
         background-size: cover;
         background-position: center center;
         height: 400px;
-        width: 68%;
+        width: 75%;
         margin-top: 30px;
+        margin-bottom: 100px;
         box-shadow: 2px 2px 5px $primary-shadow-color;
+
+        @media (min-width:$sm-screen) {
+            margin-bottom: 0;
+            width: 68%;
+        }
+        //margin-bottom: 100px;
+        //width: 75%;
     }   
 }

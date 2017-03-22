@@ -28,7 +28,12 @@ header {
                     color: $primary-font-color;
                     font-family: $highlight-font-type;
                     text-decoration: none;
-                    font-size: 1.5rem;
+                    font-size: 1.8rem;
+
+                    @media (min-width:$sm-screen) {
+                        font-size: 1.5rem;
+                    }
+                    //font-size: 1.8rem;
                 }
 
                 a:hover {
