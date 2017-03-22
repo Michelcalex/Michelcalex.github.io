@@ -9,20 +9,30 @@ body {
 h2 {
   background-color: #DCEED1;
   font-family: "Sacramento", cursive;
-  width: 100px;
-  padding: 10px;
-  font-size: 2em;
+  width: 75px;
+  padding: 5px;
+  font-size: 1.3rem;
   font-weight: normal;
   text-align: center;
   color: #232121;
   position: absolute;
   top: 0px;
   left: 0px; }
+  @media (min-width: 600px) {
+    h2 {
+      width: 100px;
+      padding: 10px;
+      font-size: 2em; } }
 
 .contact-containers {
   background-color: #c6d6bc;
-  padding: 40px;
-  box-shadow: 2px 2px 5px #768070; }
+  padding: 20px;
+  box-shadow: 2px 2px 5px #768070;
+  margin: 50px 0px; }
+  @media (min-width: 600px) {
+    .contact-containers {
+      padding: 40px;
+      margin: 0px; } }
 
 header {
   background-color: #736372;
@@ -34,10 +44,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2%;
+    padding: 0 5%;
     height: 75px; }
+    @media (min-width: 600px) {
+      header nav {
+        padding: 0 2%; } }
     header nav #nav-logo {
-      height: 50px; }
+      height: 30px; }
+      @media (min-width: 600px) {
+        header nav #nav-logo {
+          height: 50px; } }
     header nav ul {
       display: flex; }
       header nav ul li {
@@ -47,8 +63,10 @@ header {
         header nav ul li a {
           color: #232121;
           font-family: "Sacramento", cursive;
-          text-decoration: none;
-          font-size: 1.5rem; }
+          text-decoration: none; }
+          @media (min-width: 600px) {
+            header nav ul li a {
+              font-size: 1.5rem; } }
         header nav ul li a:hover {
           color: #DCEED1; }
 
@@ -63,7 +81,7 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     height: 200px;
-    width: 80%; }
+    width: 100%; }
 
 #about {
   background-color: #AAC0AA;
@@ -81,39 +99,68 @@ header {
     color: #767171;
     letter-spacing: 0.05rem;
     box-shadow: 2px 2px 5px #768070; }
+    #about #about-info p {
+      font-size: 0.75rem; }
+      @media (min-width: 600px) {
+        #about #about-info p {
+          font-size: 1rem; } }
   #about span {
     font-family: "Sacramento", cursive;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color: #767171; }
+    @media (min-width: 600px) {
+      #about span {
+        font-size: 1.7rem; } }
   #about #about-img {
     background-image: url("../assets/lookoutmtn.png");
     background-size: cover;
     background-position: center center;
-    height: 400px;
-    width: 68%;
+    height: 300px;
+    width: 80%;
     margin-top: 30px;
     box-shadow: 2px 2px 5px #768070; }
+    @media (min-width: 600px) {
+      #about #about-img {
+        height: 400px;
+        width: 70%; } }
 
 #portfolio {
   background-color: #7A918D;
   position: relative;
-  height: 800px;
   display: flex;
-  align-items: center; }
+  padding-bottom: 0px;
+  /* height: 800px; */
+  /* display: flex; */
+  /* align-items: center; */ }
+  @media (min-width: 600px) {
+    #portfolio {
+      height: 800px;
+      padding-bottom: 40px; } }
   #portfolio #portfolio-grid {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 48px;
-    padding-right: 20px; }
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 40px 50px 0px; }
+    @media (min-width: 600px) {
+      #portfolio #portfolio-grid {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding-right: 20px;
+        justify-content: center;
+        margin-top: 40px; } }
+    @media (min-width: 1407px) {
+      #portfolio #portfolio-grid {
+        padding-right: 100px; } }
     #portfolio #portfolio-grid li {
-      width: 30%;
+      width: 70%;
       margin: 0px 25px; }
+      @media (min-width: 600px) {
+        #portfolio #portfolio-grid li {
+          width: 30%; } }
       @media (min-width: 1407px) {
         #portfolio #portfolio-grid li {
-          width: 20%;
-          margin: 0px 50px; } }
+          padding: 5px; } }
       #portfolio #portfolio-grid li figure.sample-caption {
         position: relative;
         margin: 0; }
@@ -145,10 +192,6 @@ header {
           background-color: #c6d6bc;
           -webkit-transition: opacity .3s ease-in-out;
           transition: opacity .3s ease-in-out; }
-          @media (min-width: 1407px) {
-            #portfolio #portfolio-grid li figure.sample-caption figcaption.sample-caption-text {
-              left: 20px;
-              bottom: 20px; } }
           #portfolio #portfolio-grid li figure.sample-caption figcaption.sample-caption-text h4 {
             font-family: "Sacramento", cursive;
             font-size: 1.4rem;
@@ -160,41 +203,51 @@ header {
           #portfolio #portfolio-grid li figure.sample-caption figcaption.sample-caption-text .tools {
             color: #767171;
             padding: 5px 0px; }
-      #portfolio #portfolio-grid li .sample-caption:hover .sample-caption-text {
+      #portfolio #portfolio-grid li .sample-caption:hover .sample-caption-text, #portfolio #portfolio-grid li .sample-caption:focus .sample-caption-text {
         opacity: 1; }
 
 #contact {
   background-color: #BAA49B;
   margin-bottom: 50px;
   position: relative;
-  height: calc(100vh - 125px);
   display: flex;
   align-items: center; }
+  @media (min-width: 600px) {
+    #contact {
+      height: calc(100vh - 125px); } }
   #contact #contact-container {
     width: 75%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around; }
-    #contact #contact-container #info-container {
-      margin-right: 10px; }
-      @media (min-width: 1407px) {
-        #contact #contact-container #info-container {
-          margin-left: 30px; } }
-      #contact #contact-container #info-container div a {
+    margin: 0 auto; }
+    @media (min-width: 600px) {
+      #contact #contact-container {
         display: flex;
-        align-items: center;
-        font-family: "Sacramento", cursive;
-        font-size: 1.4rem;
-        color: #767171;
-        text-decoration: none; }
-      #contact #contact-container #info-container .contact-icons {
-        width: 30px;
-        margin: 11px 12px 11px 5px; }
+        justify-content: space-around; } }
+    @media (min-width: 600px) {
+      #contact #contact-container #info-container {
+        margin-right: 10px; } }
+    @media (min-width: 1407px) {
+      #contact #contact-container #info-container {
+        margin-left: 30px; } }
+    #contact #contact-container #info-container div a {
+      display: flex;
+      align-items: center;
+      font-family: "Sacramento", cursive;
+      font-size: 1rem;
+      color: #767171;
+      text-decoration: none; }
+      @media (min-width: 600px) {
+        #contact #contact-container #info-container div a {
+          font-size: 1.4rem; } }
+    #contact #contact-container #info-container .contact-icons {
+      width: 30px;
+      margin: 11px 12px 11px 5px; }
     #contact #contact-container #form-container {
-      width: 50%;
-      margin-left: 10px;
       display: flex;
       flex-direction: column; }
+      @media (min-width: 600px) {
+        #contact #contact-container #form-container {
+          margin-left: 10px;
+          width: 50%; } }
       @media (min-width: 1407px) {
         #contact #contact-container #form-container {
           margin-right: 30px; } }

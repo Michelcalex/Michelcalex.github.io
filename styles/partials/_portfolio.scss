@@ -1,25 +1,43 @@
 #portfolio {
     background-color: $portfolio-bkgd-color;
     position: relative;
-    height: $section-height;
     display: flex;
-    align-items: center;
+    padding-bottom: 0px;
+
+    @media (min-width:$md-screen) {
+        height: $section-height;
+        padding-bottom: 40px;
+    }
 
     #portfolio-grid {
         list-style: none;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0 48px;
-        padding-right: 20px;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 40px 50px 0px;
+
+        @media (min-width:$md-screen) {
+            flex-wrap: wrap;
+            margin: 0 auto;
+            padding-right: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        @media (min-width:$xl-screen) {
+            padding-right: 100px;
+        }
 
         li {
-            width: 30%;
+            width: 70%;
             margin: 0px 25px;
 
+            @media (min-width: $md-screen) {
+                width: 30%;
+            }
+
             @media (min-width:$xl-screen) {
-                width: 20%;
-                margin: 0px 50px;
+                padding: 5px;
             }
 
             figure.sample-caption {
@@ -59,12 +77,6 @@
                     -webkit-transition: opacity .3s ease-in-out;
                     transition: opacity .3s ease-in-out;
 
-
-                    @media (min-width:$xl-screen) {
-                        left: 20px;
-                        bottom: 20px;
-                    }
-
                     h4 {
                         font-family: $highlight-font-type;
                         font-size: 1.4rem;
@@ -84,7 +96,7 @@
                 }
             }
 
-            .sample-caption:hover .sample-caption-text {
+            .sample-caption:hover .sample-caption-text, .sample-caption:focus .sample-caption-text, {
                 opacity: 1;
             }
         }

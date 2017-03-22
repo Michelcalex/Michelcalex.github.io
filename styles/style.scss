@@ -18,6 +18,7 @@ $section-height: 800px;
 
 //Media quieres 
 $xl-screen: 1407px;
+$md-screen: 600px;
 
 
 
@@ -35,21 +36,33 @@ body {
 h2 {
     background-color: $label-bkgd-color;
     font-family: $highlight-font-type;
-    width: 100px;
-    padding: 10px;    
-    font-size: 2em;
+    width: 75px;
+    padding: 5px;    
+    font-size: 1.3rem;
     font-weight: normal;
     text-align: center;
     color: $primary-font-color;
     position: absolute;
     top: 0px; 
     left: 0px;
+
+    @media (min-width:$md-screen) {
+        width: 100px;
+        padding: 10px;    
+        font-size: 2em;
+    }
 }
 
 .contact-containers {
     background-color: $cont-contain-bkgd-color;
-    padding: 40px;
+    padding: 20px;
     box-shadow: 2px 2px 5px $primary-shadow-color;
+    margin: 50px 0px;
+
+    @media (min-width:$md-screen) {
+        padding: 40px;
+        margin: 0px;
+    }
 }
 
 

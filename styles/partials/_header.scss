@@ -9,11 +9,19 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 2%;
+        padding: 0 5%;
         height: 75px;
+
+        @media (min-width:$md-screen) {
+            padding: 0 2%;
+        }
     
         #nav-logo {
-            height: 50px;
+            height: 30px;
+
+            @media (min-width:$md-screen) {
+                height: 50px;
+            }
         }
 
         ul {
@@ -28,7 +36,10 @@ header {
                     color: $primary-font-color;
                     font-family: $highlight-font-type;
                     text-decoration: none;
-                    font-size: 1.5rem;
+
+                    @media (min-width:$md-screen) {
+                        font-size: 1.5rem;
+                    }
                 }
 
                 a:hover {

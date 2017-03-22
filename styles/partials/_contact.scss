@@ -2,18 +2,27 @@
     background-color: #BAA49B;
     margin-bottom: 50px;
     position: relative;
-    height: calc(100vh - 125px);
     display: flex;
     align-items: center;
+
+    @media (min-width: $md-screen) {
+        height: calc(100vh - 125px);
+    }
 
     #contact-container {
         width: 75%;
         margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
+
+        @media (min-width: $md-screen) {
+            display: flex;
+            justify-content: space-around;
+        }
 
         #info-container {
-            margin-right: 10px;         
+
+            @media (min-width:$md-screen) {
+                margin-right: 10px;
+            }        
 
             @media (min-width:$xl-screen) {
                 margin-left: 30px;
@@ -23,9 +32,13 @@
                 display: flex;
                 align-items: center;
                 font-family: $highlight-font-type;
-                font-size: 1.4rem;
+                font-size: 1rem;
                 color: $secondary-font-color;
                 text-decoration: none;
+
+                @media (min-width:$md-screen) {
+                    font-size: 1.4rem;
+                }
             }
 
             .contact-icons {
@@ -35,10 +48,13 @@
         }
 
         #form-container {
-            width: 50%; 
-            margin-left: 10px;
             display: flex;
             flex-direction: column;
+
+            @media (min-width:$md-screen) {
+                margin-left: 10px;
+                width: 50%; 
+            }
             
             @media (min-width:$xl-screen) {
                 margin-right: 30px;
