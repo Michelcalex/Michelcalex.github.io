@@ -9,12 +9,20 @@
     
     #about-info {
         background-color: rgba(255, 255, 255, 0.4);
-        width: 65%;
+        width: 75%;
         text-align: center;
         padding: 25px;
         color: $secondary-font-color;
         letter-spacing: 0.05rem;
         box-shadow: 2px 2px 5px $primary-shadow-color;
+
+        @media (min-width:$lg-screen) {
+            width: 65%;
+        }
+
+        @media (min-width:$xl-screen) {
+            width: 55%;
+        }
 
         p {
             font-size: 0.75rem; 
@@ -40,13 +48,18 @@
         background-size: cover;
         background-position: center center;
         height: 300px;
-        width: 80%;
+        padding: 25px;
+        width: 75%;
         margin-top: 30px;
         box-shadow: 2px 2px 5px $primary-shadow-color;
 
-        @media (min-width:$md-screen) {
-            height: 400px;
-            width: 70%;
+        @media (min-width:$lg-screen) {
+            width: 65%;
+        }
+
+         @media (min-width:$xl-screen) {
+            width: 55%;
+            height: 425px;
         }
     }   
 }
