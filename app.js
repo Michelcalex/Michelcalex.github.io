@@ -115,7 +115,7 @@ let contactInfo = [
         description: 'linkedin.com/in/michelcalex',
     },
     {   
-        link: 'assets/LexiMichelResume2017[fall].pdf',
+        link: 'assets/LexiMichelResume2017-fall.pdf',
         img: 'assets/resume.png', 
         alt: 'Lexi Michel\'s resume',
         description: 'My history',
