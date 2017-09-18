@@ -22,7 +22,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('assets', function() {
-    return gulp.src(['assets/*.ico', 'assets/*.jpg', 'assets/*.png'])
+    return gulp.src(['assets/*.ico', 'assets/*.jpg', 'assets/*.png', 'assets/*.pdf'])
         .pipe(gulp.dest('public/assets'));
 });
 
